@@ -133,11 +133,14 @@ backend:
     file: "backend/server.py"
     stuck_count: 0
     priority: "low"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: true
         agent: "main"
         comment: "Router mounted at /api. Will run backend tests to verify /api/ and /api/status endpoints."
+      - working: true
+        agent: "testing"
+        comment: "✅ All backend API tests passed: GET /api/ returns correct message, POST /api/status creates status check with proper UUID/timestamp, GET /api/status returns array with created entries. Tested both localhost:8001 and external URL routing."
 
 frontend:
   - task: "Frontend boots with extracted project"
