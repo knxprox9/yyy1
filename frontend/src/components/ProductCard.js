@@ -132,7 +132,7 @@ const StyledWrapper = styled.div`
   .card .favorite svg { fill: #d1d5db; transition: all 0.2s ease; }
 
   .card .content { padding: 0 0.8rem; margin-bottom: 1rem; }
-  .card .content .brand { font-weight: 900; color: #a6a6a6; text-align: right; }
+  .card .content .brand { font-weight: 900; color: #a6a6a6; text-align: right; margin-bottom: 0.75rem; }
   .card .content .product-name { font-weight: 700; color: #666; font-size: 0.7rem; margin-bottom: 0.5rem; text-align: right; }
 
   .card .content .loading-indicator { display: flex; justify-content: center; align-items: center; gap: 0.2rem; margin-bottom: 1rem; padding: 0.3rem 0; }
