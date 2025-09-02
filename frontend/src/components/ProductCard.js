@@ -167,7 +167,7 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon img { transform: scale(1.35); transform-origin: center; }
 
   /* Blue divider under rating spanning full card width */
-  .card .divider { height: 2px; width: 100%; background: #2563EB; opacity: 0.9; margin: 1rem 0 0.2rem; }
+  .card .divider { height: 2px; width: 100%; background: #2563EB; opacity: 0.9; margin: 1.5rem 0 0.2rem; }
 
 
   .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon svg,
