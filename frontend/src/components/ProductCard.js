@@ -48,8 +48,8 @@ const ProductCard = () => {
                 <li className="payment-card google" aria-label="Google Pay">
                   <div className="card-icon real-icon google"><SiGooglepay size={20} color="#4285F4"/></div>
                 </li>
-                <li className="payment-card paypal" aria-label="PayPal">
-                  <div className="card-icon real-icon paypal"><SiPaypal size={20} color="#003087"/></div>
+                <li className="payment-card mastercard" aria-label="Mastercard">
+                  <div className="card-icon real-icon mastercard"><SiMastercard size={20} color="#EB001B"/></div>
                 </li>
               </ul>
             </div>
