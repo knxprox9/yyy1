@@ -51,6 +51,9 @@ const ProductCard = () => {
                 <li className="payment-card mastercard" aria-label="Mastercard">
                   <div className="card-icon real-icon mastercard"><img src="/assets/mastercard.svg" alt="Mastercard" style={{height: '16px', width: 'auto'}}/></div>
                 </li>
+                <li className="payment-card roblox" aria-label="Roblox">
+                  <div className="card-icon real-icon roblox"><SiRoblox size={20} color="#E2231A"/></div>
+                </li>
               </ul>
             </div>
           </div>
