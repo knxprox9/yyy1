@@ -101,3 +101,81 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Extract the uploaded ZIP archive into the root directory of the workspace, delete the original ZIP, and set the extracted content as the active working directory."
+
+backend:
+  - task: "Backend service boots with extracted project"
+    implemented: true
+    working: true
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Dependencies installed from requirements.txt; backend restarted via supervisor; startup logs healthy."
+  - task: "Mongo connection via MONGO_URL and DB_NAME"
+    implemented: true
+    working: true
+    file: "backend/.env"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Confirmed server uses os.environ['MONGO_URL'] and DB_NAME with motor client."
+  - task: "API routing behind /api prefix"
+    implemented: true
+    working: true
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Router mounted at /api. Will run backend tests to verify /api/ and /api/status endpoints."
+
+frontend:
+  - task: "Frontend boots with extracted project"
+    implemented: true
+    working: true
+    file: "frontend/package.json"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Installed packages via yarn; frontend restarted via supervisor; manual screenshot shows page renders."
+  - task: "Env wiring using REACT_APP_BACKEND_URL"
+    implemented: true
+    working: true
+    file: "frontend/.env"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Verified .env contains REACT_APP_BACKEND_URL. No hardcoding performed."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Verify backend endpoints respond: GET /api/ and POST/GET /api/status"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Initial setup complete: ZIP extracted to /app, original ZIP deleted, services restarted. Proceed to backend endpoint tests as per test_plan. After backend confirmation, will ask user whether to run automated frontend tests or they will test manually."
