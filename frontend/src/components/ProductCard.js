@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SiVisa, SiGooglepay, SiPaypal } from 'react-icons/si';
+import { SiVisa, SiGooglepay, SiMastercard } from 'react-icons/si';
 import ToggleButton from './ToggleButton';
 
 const ProductCard = () => {
