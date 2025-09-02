@@ -182,3 +182,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "Initial setup complete: ZIP extracted to /app, original ZIP deleted, services restarted. Proceed to backend endpoint tests as per test_plan. After backend confirmation, will ask user whether to run automated frontend tests or they will test manually."
+  - agent: "testing"
+    message: "Backend API testing completed successfully. All 3 endpoints (GET /api/, POST /api/status, GET /api/status) are working correctly. Created backend_test.py for future testing. Both internal (localhost:8001) and external URL routing confirmed working. Ready for main agent to proceed with next steps."
