@@ -157,7 +157,7 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon { display: flex; align-items: center; justify-content: center; background: white; padding: 2px 6px; border-radius: 4px; }
   .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon svg,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon svg,
-  .card .content .color-size-container .colors .colors-container .payment-card.paypal .real-icon svg { width: 28px; height: 16px; }
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon svg { width: 28px; height: 16px; }
 
   .card .content .rating { color: #a8a8a8; font-size: 0.6rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; }
   .card .content .rating svg { height: 12px; }
