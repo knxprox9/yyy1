@@ -158,6 +158,8 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon svg,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon svg,
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon svg { width: 28px; height: 16px; }
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon img { height: 16px; width: auto; display: block; }
+
 
   .card .content .rating { color: #a8a8a8; font-size: 0.6rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; }
   .card .content .rating svg { height: 12px; }
