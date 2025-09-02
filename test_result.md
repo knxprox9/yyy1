@@ -174,7 +174,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Verify backend endpoints respond: GET /api/ and POST/GET /api/status"
+    - "Backend testing complete - all endpoints verified"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
