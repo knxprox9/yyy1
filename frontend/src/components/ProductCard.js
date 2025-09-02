@@ -159,6 +159,10 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card .card-icon { height: 100%; width: auto; border-radius: 3px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon { display: flex; align-items: center; justify-content: center; background: white; padding: 2px 6px; border-radius: 4px; }
   .card .content .color-size-container .colors .colors-container .payment-card.roblox .real-icon svg { width: 28px; height: 16px; }
+  .card .content .color-size-container .colors .colors-container .payment-card .real-icon { overflow: hidden; }
+  .card .content .color-size-container .colors .colors-container .payment-card .real-icon svg,
+  .card .content .color-size-container .colors .colors-container .payment-card .real-icon img { transform: scale(1.2); transform-origin: center; }
+
 
   .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon svg,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon svg,
