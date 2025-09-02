@@ -135,7 +135,7 @@ const StyledWrapper = styled.div`
   .card .content .brand { font-weight: 900; color: #a6a6a6; text-align: right; }
   .card .content .product-name { font-weight: 700; color: #666; font-size: 0.7rem; margin-bottom: 0.5rem; text-align: right; }
 
-  .card .content .loading-indicator { display: flex; justify-content: flex-end; align-items: center; gap: 0.2rem; margin-bottom: 1rem; padding: 0.3rem 0; }
+  .card .content .loading-indicator { display: flex; justify-content: center; align-items: center; gap: 0.2rem; margin-bottom: 1rem; padding: 0.3rem 0; }
   .card .content .loading-indicator .dot { width: 4px; height: 4px; border-radius: 50%; background-color: #22c55e; animation: typing-dots 1.4s infinite ease-in-out; }
   .card .content .loading-indicator .dot:nth-child(1) { animation-delay: -0.32s; }
   .card .content .loading-indicator .dot:nth-child(2) { animation-delay: -0.16s; }
