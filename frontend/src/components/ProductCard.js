@@ -163,6 +163,8 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.roblox .real-icon svg { width: 28px; height: 16px; }
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon { overflow: hidden; }
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon svg,
+  .card .divider { height: 2px; width: 100%; background: #2563EB; opacity: 0.8; margin: 0.5rem 0 0.25rem; }
+
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon img { transform: scale(1.35); transform-origin: center; }
 
 
