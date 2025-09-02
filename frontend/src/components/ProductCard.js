@@ -174,6 +174,11 @@ const StyledWrapper = styled.div`
     font-size: 0.5rem;
     margin-top: 0.2rem;
   }
+  /* Promo row under blue divider */
+  .card .promo-row { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.5rem; color: #6b7280; font-weight: 700; font-size: 0.6rem; }
+  .card .promo-row .promo-item { display: inline-flex; align-items: center; gap: 0.25rem; background: #ffffff; border: 1px solid #eef2ff; border-radius: 999px; padding: 2px 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+  .card .promo-row .promo-item svg { width: 12px; height: 12px; color: #2563EB; }
+
   .card .content .color-size-container .colors .colors-container .payment-card { height: 18px; position: relative; cursor: pointer; transition: transform 0.2s ease; }
   .card .content .color-size-container .colors .colors-container .payment-card:hover { transform: scale(1.1); }
   .card .content .color-size-container .colors .colors-container .payment-card .card-icon { height: 100%; width: auto; border-radius: 3px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
