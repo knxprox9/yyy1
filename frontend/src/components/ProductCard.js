@@ -69,6 +69,22 @@ const ProductCard = () => {
             (29,062)
           </div>
 
+          <div className="divider" aria-hidden="true" />
+          <div className="promo-row" aria-label="promotions">
+            <div className="promo-item">
+              <FiTruck aria-hidden="true" />
+              <span>شحن سريع</span>
+            </div>
+            <div className="promo-item">
+              <FiShield aria-hidden="true" />
+              <span>آمن</span>
+            </div>
+            <div className="promo-item">
+              <FiGift aria-hidden="true" />
+              <span>هدايا</span>
+            </div>
+          </div>
+
         </div>
           <div className="divider" aria-hidden="true" />
 
