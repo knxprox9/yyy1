@@ -49,7 +49,7 @@ const ProductCard = () => {
                   <div className="card-icon real-icon google"><SiGooglepay size={20} color="#4285F4"/></div>
                 </li>
                 <li className="payment-card mastercard" aria-label="Mastercard">
-                  <div className="card-icon real-icon mastercard"><SiMastercard size={20} color="#EB001B"/></div>
+                  <div className="card-icon real-icon mastercard"><img src="/assets/mastercard.svg" alt="Mastercard" style={{height: '16px', width: 'auto'}}/></div>
                 </li>
               </ul>
             </div>
