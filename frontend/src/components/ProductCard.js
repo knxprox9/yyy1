@@ -67,7 +67,7 @@ const ProductCard = () => {
             </svg>
             (29,062)
           </div>
-          <div className="divider" aria-hidden="true" />
+
         </div>
       </div>
     </StyledWrapper>
