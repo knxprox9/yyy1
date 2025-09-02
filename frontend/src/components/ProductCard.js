@@ -85,7 +85,6 @@ const ProductCard = () => {
           </div>
 
         </div>
-          <div className="divider" aria-hidden="true" />
 
       </div>
     </StyledWrapper>
