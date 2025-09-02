@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SiVisa, SiGooglepay, SiMastercard, SiRoblox } from 'react-icons/si';
+import { FiTruck, FiShield, FiGift } from 'react-icons/fi';
 import ToggleButton from './ToggleButton';
 
 const ProductCard = () => {
